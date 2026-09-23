@@ -2,10 +2,10 @@ import "./cardProduto.css";
 
 export default function CardFilme({ produto }){
     return(
-        <div className="cardFilme">
+        <div className="cardProduto">
             <img src={products.images} />
             <h2>{products.title}</h2>
-            <a href={`/produtos${produto.id}`}></a>
+            <a href={`/produtos${products.id}`}></a>
 
         </div>
     )

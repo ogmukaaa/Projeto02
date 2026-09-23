@@ -1,4 +1,4 @@
-.card {
+.cardProduto {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -9,7 +9,7 @@
     background-color: cornsilk;
 }
 
-.wrapper-filme img{
+.cardProduto img{
     height: auto;
     width: 200px;
     place-self: center;

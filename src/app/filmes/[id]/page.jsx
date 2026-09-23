@@ -5,7 +5,6 @@ import dados from "@/filmes.json";
 import { useParams } from "next/navigation";
 import "./filme.css";
 
-
 export default function Filme() {
     const [filme, setFilme] = useState(null);
     const params = useParams();

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import CardProduto from "@/components/CardProduto/"
+import CardProduto from "@/components/CardProduto"
 
 export default function Produtos() {
     const [listaProdutos, setListaProdutos] = useState([]);
