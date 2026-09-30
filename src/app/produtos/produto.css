@@ -1,0 +1,9 @@
+.container-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 16px;
+    font-family: sans-serif;
+}

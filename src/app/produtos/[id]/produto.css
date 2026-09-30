@@ -1,17 +1,18 @@
 main {
-    max-width: 400px;
+    max-width: 600px;
     margin: 40px auto;
-    font-family: sans-serif;
-    border: 1px solid #ccc;
-    border-radius: 8px;
     padding: 16px;
+    font-family: sans-serif;
 }
 
 main img {
     width: 100%;
-    border-radius: 4px;
+    max-height: 300px;
+    object-fit: contain;
 }
 
-h1, h2, h3 {
-    margin-top: 10px;
+main h1,
+main h2,
+main h3 {
+    margin: 12px 0;
 }

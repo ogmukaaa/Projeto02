@@ -1,11 +1,11 @@
 import "./cardProduto.css";
 
-export default function CardFilme({ produto }){
+export default function CardProduto({ produto }){
     return(
         <div className="cardProduto">
-            <img src={products.images} />
-            <h2>{products.title}</h2>
-            <a href={`/produtos${products.id}`}></a>
+            <img src={produto.thumbnail} alt={produto.title} />
+            <h2>{produto.title}</h2>
+            <a href={`/produtos/${produto.id}`}>Ver produto</a>
 
         </div>
     )

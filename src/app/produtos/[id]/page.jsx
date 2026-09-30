@@ -9,18 +9,23 @@ export default function Produto() {
     const params = useParams();
 
     useEffect(() => {
-        const produtoEncontrado = dados.find(f => f.id == params.id)
-        setProduto(produtoEncontrado);
-    }, [])
+        if (params?.id) {
+            fetch(`https://dummyjson.com/products/${params.id}`)
+                .then((res) => res.json())
+                .then((data) => {
+                    setProduto(data);
+                });
+        }
+    }, [params?.id]);
 
     return (
         <main>
-            {filme != null && <>
-                <img src={products.images} />
-                <h1>{products.title}</h1>
-                <h2>Categoria: {products.category}</h2>
-                <h2>{products.price}</h2>
-                <h3>Descrição: {products.description}</h3>
+            {produto != null && <>
+                <img src={produto.thumbnail} alt={produto.title} />
+                <h1>{produto.title}</h1>
+                <h2>Categoria: {produto.category}</h2>
+                <h2>{produto.price}</h2>
+                <h3>Descrição: {produto.description}</h3>
             </>}
         </main>
     )
